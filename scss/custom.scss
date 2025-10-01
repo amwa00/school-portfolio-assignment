@@ -1,22 +1,32 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Map of custom colors
+$custom-colors: (
+  "bg": #fff9ef,
+);
 
-$bg-color: #fff9ef;
-
-$secondary-color: rgb(80, 150, 255);
+// Changing value on bootstrap colors
+$primary: rgb(12, 108, 253);
+$secondary: rgb(104, 165, 245);
 $secondary-color-lgt: rgb(132, 181, 255);
 
+// Shadows
 $offset-y-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+
+// Own spacers
+$spacers: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem,
+  130: 130px,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @font-face {
   font-family: ownFont;
   src: url(../fonts/Photograph_Signature.ttf);
-}
-
-@media (min-width: 768px) {
-  .px-md-130 {
-    padding-left: 130px !important;
-    padding-right: 130px !important;
-  }
 }
 
 @media (min-width: 768px) {
@@ -31,15 +41,11 @@ $offset-y-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   }
 }
 
-
 // Changes to bootstrap classes
-.text-secondary {
-  color: $secondary-color !important;
-}
 
 // Changes to HTML & own classes
 header {
-  background-color: $bg-color;
+  background-color: map-get($custom-colors, bg);
 }
 
 h1 {
@@ -54,7 +60,7 @@ h2 {
 
 #home {
   height: 100vh;
-  background-color: #fff9ef;
+  background-color: map-get($custom-colors, bg);
 }
 
 #about {
@@ -69,7 +75,6 @@ h2 {
       max-width: 100%;
       width: 100%;
       // border: solid 5px $primary-lgt-color;
-      
     }
   }
 
@@ -83,14 +88,14 @@ h2 {
 }
 
 .experience-container {
-  background-color: #fff9ef;
+  background-color: map-get($custom-colors, bg);
 }
 
 .hero-circle {
   max-width: 80%;
   width: 400px;
   height: 400px;
-  background-color: $secondary-color-lgt;
+  background-color: $secondary;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -100,16 +105,15 @@ h2 {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
 
     opacity: 0.4;
-    
   }
 
   50% {
     transform: translate(-50%, -50%) scale(1.05);
     opacity: 0.8;
-    
   }
 }
