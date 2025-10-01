@@ -117,3 +117,14 @@ h2 {
     opacity: 0.8;
   }
 }
+
+.projects {
+  &__text-container,
+  &__img-container {
+    width: 100%;
+
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+  }
+}

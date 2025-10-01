@@ -14239,4 +14239,14 @@ h2, .h2 {
     opacity: 0.8;
   }
 }
+
+.projects__text-container, .projects__img-container {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .projects__text-container, .projects__img-container {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
