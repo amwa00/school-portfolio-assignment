@@ -1,0 +1,71 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: rgb(47, 71, 255);
+$primary-lgt-color: lighten($primary-color, 10%);
+
+@font-face {
+  font-family: ownFont;
+  src: url(fonts/Photograph_Signature.ttf);
+}
+
+@media (min-width: 992px) {
+  .mx-lg-150 {
+    margin-right: 150px !important;
+    margin-left: 150px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .px-md-130 {
+    padding-left: 130px !important;
+    padding-right: 130px !important;
+  }
+}
+
+// Changes to bootstrap classes
+.text-primary {
+  color: $primary-color;
+}
+
+// Changes to HTML & own classes
+header {
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-family: ownFont;
+  font-size: 7rem;
+}
+
+#home {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+#about {
+  .img-container {
+    width: 40%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .about-img {
+      max-width: 100%;
+      width: 100%;
+      border: solid 5px $primary-lgt-color;
+    }
+  }
+
+  .text-container {
+    width: 60%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.experience-container {
+  background-color: antiquewhite;
+}

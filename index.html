@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="container-fluid position-absolute px-sm-0 px-md-130">
+        <nav class="nav fw-semibold text-uppercase justify-content-evenly py-3">
+            <a class="link-dark text-decoration-none" href="#home">Hem</a>
+            <a class="link-dark text-decoration-none" href="#about">Om mig</a>
+            <a class="link-dark text-decoration-none" href="#experience">Erfarenhet</a>
+            <a class="link-dark text-decoration-none" href="#projects">Projekt</a>
+            <a class="link-dark text-decoration-none" href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <main class="m-0">
+        <!-- Hem -->
+        <section class="d-flex flex-column justify-content-center" id="home">
+            <h1 class="text-primary text-center">Amanda Walles</h1>
+            <p class="fs-4 text-center">aspiring front-end developer</p>
+        </section>
+
+        <!-- Om mig -->
+        <section class="d-flex flex-column flex-md-row my-5 mx-3 mx-md-5 mx-lg-150" id="about">
+            <div class="img-container text-center">
+                <img src="assets/me.jpeg" class="about-img" alt="Porträttbild på mig">
+            </div>
+
+            <div class="text-container pt-2 pt-md-0 ps-md-3 ps-lg-5">
+                <h2 class="text-primary">Om mig</h2>
+
+                <p class="fs-6">
+                    Jag heter Amanda och är en frontend-student i Stockholm med en bakgrund
+                    inom datorspelsutveckling. För mig är frontend den perfekta kombinationen av kreativitet
+                    och logik - en plats där jag får designa, koda och lösa problem samtidigt.
+                </p>
+
+                <p class="fs-6">
+                    Jag tycker om att se mönster, skapa struktur och bygga lösningar som både är
+                    funktionella och vackra. Det är just den blandningen av det praktiska och estetiska som driver mig
+                    framåt som utvecklare.
+                </p>
+
+                <p class="fs-6">
+                    När jag inte kodar hittar du mig ofta med mina tre råttor, i jakt på nästa gröna växt till hemmet
+                    eller mitt i ett brädspelsparti. Jag växte upp i Malmö men har rotat mig i Stockholm, där
+                    jag fortsätter min resa mot att bli frontend-utvecklare med känsla för detalj och
+                    användarupplevelse.
+                </p>
+            </div>
+        </section>
+
+        <!-- Erfarenheter och utbildning -->
+        <div class="experience-container py-5">
+            <section class="d-flex flex-column flex-md-row mx-3 mx-md-5 mx-lg-150" id="experience">
+                <div>
+                    <h2 class="text-primary">Utbildning</h2>
+                    <div>
+                        <h3 class="text-primary">Frontend-utveckling - Medieinstitutet, Stockholm (<i>pågående</i>)</h3>
+                        <ul>
+                            <li>Fokus på HTML, CSS/SCSS, JavaScript, moderna ramverk och UX/UI.</li>
+                            <li>Projektbaserat lärande med praktiska case inom webb- och frontend-utveckling.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-primary">
+                            Data- och systemvetenskap, inriktning datorspelsutveckling - Stockholms universitet,
+                            Stockholm (2022 - 2025)
+                        </h3>
+                        <ul>
+                            <li>Kurser inom programmering, speldesign och systemtänkande.</li>
+                            <li>Lärde mig struktur, logik och problemlösning som jag nu applicerar i webbutveckling.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-primary">Arbetslivserfarenhet</h2>
+
+                    <div>
+                        <h3 class="text-primary">Säljare - Kjell & Co (2021 - pågående)</h3>
+                        <ul>
+                            <li>Hjälper kunder att lösa tekniska problem och hitta rätt produkter.</li>
+                            <li>Ger rådgivning och rekommendationer utifrån kundens behov.</li>
+                            <li>Utvecklat starka färdigheter i kundservice, problemlösning och kommunikation.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-primary">Driftledare - Max Burgers (2020 - 2021)</h3>
+                        <ul>
+                            <li>Ansvarade för bemanning, planering och den dagliga driften i restaurangen.</li>
+                            <li>Ledde teamet i högt tempo och säkerställde god service.</li>
+                            <li>Arbetsuppgifter inkluderade även kassahantering, beställningar och att stå i köket.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Frontend-projekt -->
+        <section class="my-5 mx-3 mx-md-5 mx-lg-150" id="projects">
+            <h2 class="text-primary">Projekt</h2>
+
+            <div>
+
+                <div>
+                    <h3 class="text-primary"><b>Projekt:</b> One-pager med hem-, om- & kontaktsida</h3>
+                    <h3 class="text-primary"><b>Syfte:</b> Repetition och fördjupning av HTML, CSS och layouttekniker
+                    </h3>
+
+                    <p>
+                        I det här projektet skulle vi efterlikna en färdig design till punkt och pricka, vilket gav
+                        möjlighet att
+                        träna på HTML, CSS och layout med Grid och Flexbox. Jag valde att göra "Om"-sidan med CSS Grid
+                        för
+                        att presentera fyra personer i ett 2x2-grid, och mindre komponenter stylade jag med hjälp av
+                        Flexbox
+                        för att få enkel centrering och kunna hantera avstånd.
+                    </p>
+
+                    <p>
+                        Jag använde mig av SCSS i det här projektet vilket gav bättre struktur och återanvändbarhet.
+                        Projektet lärde mig vikten av responsivitet, struktur och konsekvent styling, samt hur man
+                        praktiskt kan använda Grid och Flexbox tillsammans.
+                    </p>
+                </div>
+
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <!-- Kontakta mig -->
+        <section class="my-5 mx-3 mx-md-5 mx-lg-150" id="contact">
+            <h2 class="text-primary">Mejla mig!</h2>
+
+            <form>
+                <div>
+                    <label for="name">Namn</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div>
+                    <label for="usr-email">Mejladress</label>
+                    <input type="email" name="usr-email" required>
+                </div>
+
+                <div>
+                    <label for="msg">Meddelande</label>
+                    <textarea name="msg" placeholder="Skriv här..."></textarea>
+                </div>
+
+                <button>Skicka</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center">&copy; Amanda Walles | 2025</p>
+    </footer>
+</body>
+
+</html>
