@@ -13734,17 +13734,16 @@ fieldset:disabled .btn {
   src: url(fonts/Photograph_Signature.ttf);
 }
 
-@media (min-width: 992px) {
-  .mx-lg-150 {
-    margin-right: 150px !important;
-    margin-left: 150px !important;
-  }
-}
-
 @media (min-width: 768px) {
   .px-md-130 {
     padding-left: 130px !important;
     padding-right: 130px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .max-w-xl {
+    max-width: 1100px;
   }
 }
 
