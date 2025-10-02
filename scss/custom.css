@@ -13731,12 +13731,12 @@ fieldset:disabled .btn {
 
 @font-face {
   font-family: ownFont;
-  font-size: clamp(3rem, 50vw, 10rem);
-  src: url(../fonts/Thesignature.otf);
+  src: url(../fonts/Photograph_Signature.ttf);
 }
 
 h1, .h1 {
   font-family: ownFont;
+  font-size: clamp(3rem, 20vw, 8rem);
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
