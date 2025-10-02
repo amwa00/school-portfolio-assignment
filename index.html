@@ -153,17 +153,20 @@
                 <h2 class="text-primary">Mejla mig!</h2>
 
                 <form>
-                    <div>
-                        <label for="name" class="form-label">Namn</label>
-                        <input type="text" name="name" class="form-control" required>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="name" class="form-label">Namn</label>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="usr-email" class="form-label">Mejladress</label>
+                            <input type="email" name="usr-email" class="form-control" required>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="usr-email" class="form-label">Mejladress</label>
-                        <input type="email" name="usr-email" class="form-control" required>
-                    </div>
 
-                    <div>
+                    <div class="col-12">
                         <label for="msg" class="form-label">Meddelande</label>
                         <textarea name="msg" class="form-control" rows="5" placeholder="Skriv här..."></textarea>
                     </div>
