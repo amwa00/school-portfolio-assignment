@@ -19,7 +19,8 @@ $offset-y-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 // Create own font
 @font-face {
   font-family: ownFont;
-  src: url(../fonts/Photograph_Signature.ttf);
+  font-size: clamp(3rem, 50vw, 10rem);
+  src: url(../fonts/Thesignature.otf);
 }
 
 // Changes to HTML & own classes

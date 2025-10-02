@@ -13731,7 +13731,8 @@ fieldset:disabled .btn {
 
 @font-face {
   font-family: ownFont;
-  src: url(../fonts/Photograph_Signature.ttf);
+  font-size: clamp(3rem, 50vw, 10rem);
+  src: url(../fonts/Thesignature.otf);
 }
 
 h1, .h1 {
