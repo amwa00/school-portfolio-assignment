@@ -1,19 +1,12 @@
-// Map of custom colors
-// $custom-colors: (
-//   "bg": #fff9ef,
-// );
-
 // Changing value on bootstrap colors
 $primary: rgb(12, 108, 253);
 $secondary: rgb(104, 165, 245);
-$secondary-color-lgt: rgb(132, 181, 255);
 $body-secondary-bg: #fff9ef;
 
 // Shadows
 $offset-y-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 
 // Import bootstrap
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Create own font
@@ -50,6 +43,22 @@ h2 {
   animation: pulse 2s infinite ease-in-out;
 }
 
+// Hovers
+button {
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+#contact {
+  h2 {
+    &:hover {
+      animation: shake 0.4s ease-in-out;
+    }
+  }
+}
+
+// Animations
 @keyframes pulse {
   0%,
   100% {
@@ -61,14 +70,6 @@ h2 {
   50% {
     transform: translate(-50%, -50%) scale(1.05);
     opacity: 0.8;
-  }
-}
-
-#contact {
-  h2 {
-    &:hover {
-      animation: shake 0.4s ease-in-out;
-    }
   }
 }
 
@@ -86,8 +87,3 @@ h2 {
   }
 }
 
-button {
-  &:hover {
-    scale: 1.1;
-  }
-}

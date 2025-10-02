@@ -13763,6 +13763,15 @@ h2, .h2 {
           animation: pulse 2s infinite ease-in-out;
 }
 
+button:hover {
+  scale: 1.1;
+}
+
+#contact h2:hover, #contact .h2:hover {
+  -webkit-animation: shake 0.4s ease-in-out;
+          animation: shake 0.4s ease-in-out;
+}
+
 @-webkit-keyframes pulse {
   0%,
   100% {
@@ -13789,11 +13798,6 @@ h2, .h2 {
             transform: translate(-50%, -50%) scale(1.05);
     opacity: 0.8;
   }
-}
-
-#contact h2:hover, #contact .h2:hover {
-  -webkit-animation: shake 0.4s ease-in-out;
-          animation: shake 0.4s ease-in-out;
 }
 
 @-webkit-keyframes shake {
@@ -13824,9 +13828,5 @@ h2, .h2 {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg);
   }
-}
-
-button:hover {
-  scale: 1.1;
 }
 /*# sourceMappingURL=custom.css.map */
