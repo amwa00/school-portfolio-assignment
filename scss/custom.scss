@@ -11,34 +11,11 @@ $secondary-color-lgt: rgb(132, 181, 255);
 // Shadows
 $offset-y-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 
-// Own spacers
-$spacers: (
-  0: 0,
-  1: 0.25rem,
-  2: 0.5rem,
-  3: 1rem,
-  4: 1.5rem,
-  5: 3rem,
-  130: 130px,
-);
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @font-face {
   font-family: ownFont;
   src: url(../fonts/Photograph_Signature.ttf);
-}
-
-@media (min-width: 768px) {
-  .w-md-45 {
-    width: 45%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .max-w-xl {
-    max-width: 1100px;
-  }
 }
 
 // Changes to bootstrap classes

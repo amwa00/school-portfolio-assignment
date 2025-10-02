@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header class="container-fluid position-absolute px-sm-0 px-md-130 z-1">
-        <nav class="nav fw-semibold text-uppercase justify-content-evenly py-3 max-w-xl mx-xl-auto">
+    <header class="container-fluid position-absolute px-sm-0 z-1">
+        <nav class="container-lg nav fw-semibold text-uppercase justify-content-evenly py-3 mx-auto">
             <a class="link-dark text-decoration-none" href="#home">Hem</a>
             <a class="link-dark text-decoration-none" href="#about">Om mig</a>
             <a class="link-dark text-decoration-none" href="#experience">Erfarenhet</a>
@@ -27,11 +27,10 @@
                 <h1 class="text-primary text-center max-w-xl mx-xl-auto">Amanda Walles</h1>
                 <p class="fs-4 text-center max-w-xl mx-xl-auto">aspiring front-end developer</p>
             </div>
-
         </section>
 
         <!-- Om mig -->
-        <section class="d-flex flex-column flex-md-row my-5 mx-3 mx-md-5 max-w-xl mx-xl-auto" id="about">
+        <section class="container-lg d-flex flex-column flex-md-row my-5 mx-auto" id="about">
             <div class="img-container text-center">
                 <img src="assets/me.jpeg" class="about-img border border-primary" alt="Porträttbild på mig">
             </div>
@@ -62,10 +61,9 @@
 
         <!-- Erfarenheter och utbildning -->
         <div class="experience-container py-5">
-            <section class="d-flex flex-column flex-md-row justify-content-md-between mx-3 mx-md-5 max-w-xl mx-xl-auto"
-                id="experience">
+            <section class="container-lg row g-4 justify-content-between mx-auto" id="experience">
                 <!-- Utbildningskort -->
-                <div class="w-md-45">
+                <div class="col-12 col-md-6">
                     <h2 class="fs-2 text-primary text-center text-md-start">Utbildning</h2>
                     <div>
                         <h3 class="fs-4 text-secondary">Frontend-utveckling - Medieinstitutet, Stockholm
@@ -90,7 +88,7 @@
                 </div>
 
                 <!-- Arbetskort -->
-                <div class="w-md-45">
+                <div class="col-12 col-md-6">
                     <h2 class="fs-2 text-primary text-center text-md-start">Arbetslivserfarenhet</h2>
 
                     <div>
@@ -115,7 +113,7 @@
         </div>
 
         <!-- Frontend-projekt -->
-        <section class="projects my-5 mx-3 mx-md-5 max-w-xl mx-xl-auto" id="projects">
+        <section class="projects container-lg my-5 mx-auto" id="projects">
             <h2 class="fs-2 text-primary text-center text-md-start">Projekt</h2>
 
             <h3 class="fs-4 text-secondary"><b>Projekt:</b> One-pager med hem-, om- & kontaktsida</h3>
@@ -149,28 +147,30 @@
 
         <!-- Kontakta mig -->
         <div class="contact-container py-5">
-            <section class="my-5 mx-3 mx-md-5 max-w-xl mx-xl-auto" id="contact">
-                <h2 class="text-primary">Mejla mig!</h2>
+            <section class="container-lg my-5 mx-auto" id="contact">
+                <h2 class="text-center text-primary">Mejla mig!</h2>
 
                 <form>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
+                    <div class="row justify-content-center">
+                        <!-- 2 inputs bredvid varandra på större skärmar, under på små -->
+                        <div class="col-12 col-md-4">
                             <label for="name" class="form-label">Namn</label>
                             <input type="text" name="name" class="form-control" required>
                         </div>
 
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-4">
                             <label for="usr-email" class="form-label">Mejladress</label>
                             <input type="email" name="usr-email" class="form-control" required>
                         </div>
+
+                        <!-- 1 input som alltid tar upp fulla bredden av formen -->
+                        <div class="col-12 col-md-8">
+                            <label for="msg" class="form-label">Meddelande</label>
+                            <textarea name="msg" class="form-control" rows="5" placeholder="Skriv här..."></textarea>
+                        </div>
                     </div>
 
-
-                    <div class="col-12">
-                        <label for="msg" class="form-label">Meddelande</label>
-                        <textarea name="msg" class="form-control" rows="5" placeholder="Skriv här..."></textarea>
-                    </div>
-
+                    <!-- Knapp för att skicka info -->
                     <button>Skicka</button>
                 </form>
             </section>
