@@ -23,6 +23,10 @@ $offset-y-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 // Changes to HTML & own classes
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: ownFont;
   font-size: clamp(3rem, 20vw, 8rem);
@@ -57,5 +61,33 @@ h2 {
   50% {
     transform: translate(-50%, -50%) scale(1.05);
     opacity: 0.8;
+  }
+}
+
+#contact {
+  h2 {
+    &:hover {
+      animation: shake 0.4s ease-in-out;
+    }
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  20%, 60% {
+    transform: rotate(5deg);
+  }
+
+  40%, 80% {
+    transform: rotate(-5deg);
+  }
+}
+
+button {
+  &:hover {
+    scale: 1.1;
   }
 }

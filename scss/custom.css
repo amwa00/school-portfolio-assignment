@@ -13734,6 +13734,10 @@ fieldset:disabled .btn {
   src: url(../fonts/Photograph_Signature.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, .h1 {
   font-family: ownFont;
   font-size: clamp(3rem, 20vw, 8rem);
@@ -13785,5 +13789,44 @@ h2, .h2 {
             transform: translate(-50%, -50%) scale(1.05);
     opacity: 0.8;
   }
+}
+
+#contact h2:hover, #contact .h2:hover {
+  -webkit-animation: shake 0.4s ease-in-out;
+          animation: shake 0.4s ease-in-out;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+button:hover {
+  scale: 1.1;
 }
 /*# sourceMappingURL=custom.css.map */
