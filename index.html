@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="container-fluid position-absolute px-sm-0 z-1">
+    <header class="header container-fluid position-absolute px-sm-0 z-1">
         <nav class="container-lg nav fw-semibold text-uppercase justify-content-evenly py-3 mx-auto">
             <a class="link-dark text-decoration-none" href="#home">Hem</a>
             <a class="link-dark text-decoration-none" href="#about">Om mig</a>
@@ -21,21 +21,27 @@
 
     <main class="m-0">
         <!-- Hem -->
-        <section class="d-flex flex-column justify-content-center align-items-center position-relative" id="home">
+        <section
+            class="d-flex flex-column justify-content-center align-items-center position-relative bg-body-secondary vh-100"
+            id="home">
             <div class="hero-circle position-absolute rounded-circle"></div>
             <div class="z-2">
-                <h1 class="text-primary text-center max-w-xl mx-xl-auto">Amanda Walles</h1>
-                <p class="fs-4 text-center max-w-xl mx-xl-auto">aspiring front-end developer</p>
+                <h1 class="display-1 text-primary text-center">Amanda Walles</h1>
+                <p class="fs-4 text-center">aspiring front-end developer</p>
             </div>
         </section>
 
         <!-- Om mig -->
-        <section class="container-lg d-flex flex-column flex-md-row my-5 mx-auto" id="about">
-            <div class="img-container text-center">
-                <img src="assets/me.jpeg" class="about-img border border-primary" alt="Porträttbild på mig">
+        <section class="about container-lg row mx-auto my-5" id="about">
+
+            <!-- Bild-container -->
+            <div class="col-12 col-md-5">
+                <img src="assets/me.jpeg" class="img-fluid rounded-5 border border-4 border-primary"
+                    alt="Porträttbild på mig">
             </div>
 
-            <div class="text-container pt-2 pt-md-0 ps-md-3 ps-lg-5">
+            <!-- Text-container -->
+            <div class="col-12 col-md-7 pt-2 pt-md-0 ps-md-3 ps-lg-5">
                 <h2 class="fs-2 text-primary text-center text-md-start">Om mig</h2>
 
                 <p class="fs-6">
@@ -60,7 +66,7 @@
         </section>
 
         <!-- Erfarenheter och utbildning -->
-        <div class="experience-container py-5">
+        <div class="bg-body-secondary py-5">
             <section class="container-lg row g-4 justify-content-between mx-auto" id="experience">
                 <!-- Utbildningskort -->
                 <div class="col-12 col-md-6">
@@ -68,7 +74,7 @@
                     <div>
                         <h3 class="fs-4 text-secondary">Frontend-utveckling - Medieinstitutet, Stockholm
                             (<i>pågående</i>)</h3>
-                        <ul class="fs-5">
+                        <ul class="fs-6">
                             <li>Fokus på HTML, CSS/SCSS, JavaScript, moderna ramverk och UX/UI.</li>
                             <li>Projektbaserat lärande med praktiska case inom webb- och frontend-utveckling.</li>
                         </ul>
@@ -79,7 +85,7 @@
                             Data- och systemvetenskap, inriktning datorspelsutveckling - Stockholms universitet,
                             Stockholm (2022 - 2025)
                         </h3>
-                        <ul class="fs-5">
+                        <ul class="fs-6">
                             <li>Kurser inom programmering, speldesign och systemtänkande.</li>
                             <li>Lärde mig struktur, logik och problemlösning som jag nu applicerar i webbutveckling.
                             </li>
@@ -93,7 +99,7 @@
 
                     <div>
                         <h3 class="fs-4 text-secondary">Säljare - Kjell & Co (2021 - pågående)</h3>
-                        <ul class="fs-5">
+                        <ul class="fs-6">
                             <li>Hjälper kunder att lösa tekniska problem och hitta rätt produkter.</li>
                             <li>Ger rådgivning och rekommendationer utifrån kundens behov.</li>
                             <li">Utvecklat starka färdigheter i kundservice, problemlösning och kommunikation.</li>
@@ -102,7 +108,7 @@
 
                     <div>
                         <h3 class="fs-4 text-secondary">Driftledare - Max Burgers (2020 - 2021)</h3>
-                        <ul class="fs-5">
+                        <ul class="fs-6">
                             <li>Ansvarade för bemanning, planering och den dagliga driften i restaurangen.</li>
                             <li>Ledde teamet i högt tempo och säkerställde god service.</li>
                             <li>Arbetsuppgifter inkluderade även kassahantering, beställningar och att stå i köket.</li>
@@ -119,8 +125,8 @@
             <h3 class="fs-4 text-secondary"><b>Projekt:</b> One-pager med hem-, om- & kontaktsida</h3>
             <h3 class="fs-4 text-secondary"><b>Syfte:</b> Repetition och fördjupning av HTML, CSS och layouttekniker
             </h3>
-            <div class="d-flex flex-column flex-lg-row">
-                <div class="projects__text-container mt-1">
+            <div class="row">
+                <div class="col-12 col-lg-7 mt-1">
                     <p>
                         I det här projektet skulle vi efterlikna en färdig design till punkt och pricka, vilket gav
                         möjlighet att
@@ -138,7 +144,7 @@
                     </p>
                 </div>
 
-                <div class="projects__img-container mt-1">
+                <div class="col-12 col-lg-5 mt-1">
                     <img src="assets/Start_Page.png" class="project-img img-thumbnail" alt="HTML-projekt">
                 </div>
 
@@ -146,7 +152,7 @@
         </section>
 
         <!-- Kontakta mig -->
-        <div class="contact-container py-5">
+        <div class="bg-body-secondary py-5">
             <section class="container-lg my-5 mx-auto" id="contact">
                 <h2 class="text-center text-primary">Mejla mig!</h2>
 
